@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zesify Online Shopping - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background: black;
+        }
+
+        .dashboard {
+            width: 250px;
+            background: #2c3e50;
+            color: rgb(105, 47, 47);
+            padding: 2rem 0;
+            position: fixed;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        .dashboard-header {
+            text-align: center;
+            padding: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .dashboard-nav {
+            padding: 1rem 0;
+        }
+
+        .dashboard-nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            transition: background-color 0.3s;
+        }
+
+        .dashboard-nav a:hover {
+            background: #34495e;
+        }
+
+        .dashboard-nav a.active {
+            background: #ff6f00;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #ff6f00 0%, #ff8f00 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .featured-products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-info h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-info p {
+            color: #666;
+        }
+
+        .price {
+            color: #ff6f00;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 468px) {
+            .dashboard {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .featured-products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="dashboard-header">
+            <h2>Zesify Store</h2>
+        </div>
+        <nav class="dashboard-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+         </nav>
+    </div>
+
+    <main class="main-content">
+        <section class="hero">
+            <h1>Welcome to Zesify Online Store</h1>
+            <p>Your One-Stop Shop for Electronics</p>
+        </section>
+
+        <section class="featured-products">
+            <div class="product-card">
+                <img src="phone.jpg"product-image" width="460" height="350">
+                <div class="product-info">
+                    <h3>Latest Smartphone</h3>
+                    <p><b>Experience the future of mobile technology</b></p>
+                    <p class="price"> Affordable prices for all phones accessories</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="C:\Users\hp\Desktop\shalix\pods.jpg" product-image" width=" 460" height="350" >
+                <div class="product-info">
+                    <h3>Wireless Earbuds</h3>
+                    <p><b>Premium sound quality and comfort</b></p>
+                    <p class="price">Deluxe and friendly costs</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

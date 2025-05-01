@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zesify Online Shopping - Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background: black;
+        }
+
+        .dashboard {
+            width: 250px;
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            position: fixed;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        .dashboard-header {
+            text-align: center;
+            padding: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .dashboard-nav {
+            padding: 1rem 0;
+        }
+
+        .dashboard-nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            transition: background-color 0.3s;
+        }
+
+        .dashboard-nav a:hover {
+            background: #34495e;
+        }
+
+        .dashboard-nav a.active {
+            background: #ff6f00;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .services-header {
+            background: linear-gradient(135deg, #ff6f00 0%, #ff8f00 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #ff6f00;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .service-features {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .service-features li {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="dashboard-header">
+            <h2>Zesify Store</h2>
+        </div>
+        <nav class="dashboard-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <section class="services-header">
+            <h1>Our Services</h1>
+            <p>Comprehensive Solutions for Your Electronics Needs</p>
+        </section>
+
+        <section class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🛠️</div>
+                <h3>Technical Support</h3>
+                <p>24/7 technical support for all your electronic devices. Our expert team is always ready to help you with any technical issues.</p>
+                <ul class="service-features">
+                    <li>Remote troubleshooting</li>
+                    <li>On-site support</li>
+                    <li>Software updates</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📦</div>
+                <h3>Fast Delivery</h3>
+                <p>Quick and reliable delivery services to your doorstep. We ensure your products reach you safely and on time.</p>
+                <ul class="service-features">
+                    <li>Same-day delivery</li>
+                    <li>Free shipping</li>
+                    <li>Real-time tracking</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔄</div>
+                <h3>Warranty Service</h3>
+                <p>Comprehensive warranty coverage for all our products. We stand behind the quality of our electronics.</p>
+                <ul class="service-features">
+                    <li>Extended warranty options</li>
+                    <li>Quick repairs</li>
+                    <li>Replacement service</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💳</div>
+                <h3>Flexible Payment</h3>
+                <p>Multiple payment options to make your shopping experience convenient and secure.</p>
+                <ul class="service-features">
+                    <li>Credit/Debit cards</li>
+                    <li>Mobile money</li>
+                    <li>Installment plans</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
